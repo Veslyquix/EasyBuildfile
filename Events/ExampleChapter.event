@@ -3,7 +3,7 @@
 
 #include EAstdlib.event
 
-EventPointerTable(0x7,ThisChapter)
+EventPointerTable(Debug2Ch,ThisChapter)
 
 ALIGN 4
 
