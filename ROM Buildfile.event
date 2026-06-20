@@ -9,13 +9,16 @@
 	
 	//will be generated once textprocess has run
 	#include "Text/Install Text Data.event"
+	#include "Maps/Defs/ChDefinitions.enu.event"
+    #include "Maps/MapMacros.event" 
+	#include "Maps/Definitions.event"
 	
 	#include "Tables/Table Definitions.txt"
 	#include "Tables/Table Installer.event"
 	
 	#include "Engine Hacks/Master Hack Installer.event"
-	
-	#include "Map/Master Map Installer.event"
+	#include "Maps/MapTables.event" 
+	#include "Maps/Master Map Installer.event"
 	
 	#include "Events/Chapter Events Installer.event"
 	

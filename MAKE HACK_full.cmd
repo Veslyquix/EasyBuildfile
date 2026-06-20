@@ -1,5 +1,5 @@
 cd %~dp0
-
+set "tmx2ea=%~dp0Tools\tmx2ea\tmx2ea.exe"
 echo Running full make hack.
 
 copy FE8_clean.gba myHack.gba
@@ -9,6 +9,9 @@ echo: | (c2ea "%~dp0FE8_clean.gba" -installer "%base_dir%Tables/TableInstaller.e
 
 cd "%~dp0Text"
 echo: | (textprocess_v2 text_buildfile.txt --parser-exe "%parsefile%" --installer "InstallTextData.event" --definitions "TextDefinitions.event")
+
+  cd "%~dp0Maps"
+  echo: | ("%tmx2ea%" -s "MasterMapInstaller.event")
 
 cd "%~dp0EventAssembler"
 
