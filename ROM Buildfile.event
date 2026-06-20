@@ -1,7 +1,7 @@
 #ifdef _FE8_
     #include "EAstdlib.event"
 	#include "EA Standard Library/Backward Compatibility.txt"
-	#define FreeSpace 0xefb2e0
+	#define FreeSpace 0x1000000
 	
 	ORG FreeSpace
 	
